@@ -1,7 +1,7 @@
 ## Table of Content
 1. [Recap MVC](#recap-mvc)
 1. [Recap Express](#recap-express)
-1. [Recap Sequelize](#recap-sequelize)
+1. [Recap Postgres](#recap-postgres)
 1. [Let's Make the App](#lets-make-the-app)
 1. [References](#references)
 
