@@ -68,7 +68,7 @@ Requirement dari aplikasi ini adalah:
 | Endpoint           | Deskripsi                              |
 |:-------------------|:---------------------------------------|
 | GET /              | Menampilkan "hello world"              |
-| GET /ide           | Menampilkan form penambah `Identities` |
+| GET /ide           | Menampilkan list data `Identities`     |
 | GET /ide/add       | Menampilkan form penambah `Identities` |
 | POST /ide/add      | Menghandle form penambah `Identities`  |
 | GET /ide/edit/:id  | Menampilkan edit form `Identities`     |
