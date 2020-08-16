@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <div>
+    <h1><%= title %></h1>
+  </div>
+  <div>
+    <a href="/ide/add">Add Identity</a>
+  </div>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>jobTitle</th>
+          <th>phone</th>
+          <th>address</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% dataIdentities.forEach(elem => { %> 
+          <tr>
+            <td><%= elem.id %></td>
+            <td><%= elem.name %></td>
+            <td><%= elem.jobTitle %></td>
+            <td><%= elem.phone %></td>
+            <td><%= elem.address %></td>
+            <td>
+              <a href="/ide/edit/<%= elem.id %>">Edit</a>
+              <a href="/ide/del/<%= elem.id %>">Delete</a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

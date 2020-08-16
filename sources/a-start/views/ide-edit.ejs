@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <div>
+    <h1><%= title %></h1>
+  </div>
+  <div>
+    <form action="/ide/edit/<%= dataIdentity.id %>" method="post">
+      <div>
+        <label for="acc_name">Name</label>
+        <input type="text" name="acc_name" id="acc_name" value="<%= dataIdentity.name %>">
+      </div>
+      <div>
+        <label for="acc_jobTitle">Job Title</label>
+        <input type="text" name="acc_jobTitle" id="acc_jobTitle" value="<%= dataIdentity.jobTitle %>">
+      </div>
+      <div>
+        <label for="acc_phone">Phone</label>
+        <input type="text" name="acc_phone" id="acc_phone" value="<%= dataIdentity.phone %>">
+      </div>
+      <div>
+        <label for="acc_address">Address</label>
+        <input type="text" name="acc_address" id="acc_address" value="<%= dataIdentity.address %>">
+      </div>
+      <div>
+        <button type="submit">Edit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
